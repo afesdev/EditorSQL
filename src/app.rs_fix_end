@@ -1,0 +1,12 @@
+            tbody {
+                for row in result.rows.iter() {
+                    tr {
+                        for cell in row.iter() {
+                            td { "{cell}" }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

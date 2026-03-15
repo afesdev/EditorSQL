@@ -1,0 +1,27 @@
+[package]
+name = "editorsql"
+version = "0.1.0"
+description = "A Tauri App"
+authors = ["you"]
+edition = "2021"
+
+[lib]
+name = "editorsql_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-opener = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
+# Usamos características estándar. Para Windows Integrated Auth se suele preferir winauth, 
+# pero para evitar errores de vinculación (linking), usaremos la configuración básica primero.
+tiberius = { version = "0.12", default-features = false, features = ["tds73", "rustls"] }
+tokio-util = { version = "0.7", features = ["compat"] }
+futures-util = "0.3"
+anyhow = "1.0"
+reqwest = { version = "0.12", features = ["json"] }
