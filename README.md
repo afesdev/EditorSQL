@@ -71,4 +71,4 @@ Actualmente, el proyecto se encuentra en una fase funcional estable que incluye:
    ```
 
 ---
-Desarrollado con ❤️ por [Tu Nombre/Andrés Espitia]
+Desarrollado con ❤️ por [Andrés Espitia]
